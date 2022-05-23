@@ -24,7 +24,7 @@ def petSitterConfirm(request):
         send_mail(
             "Result Regarding Pet Sitter Application",
             "Thank you for your application for petsitter. We will review your application and if you are qualified then, we will add you in our page and our team members will contact you soon.",
-            "yeona.kim1230@gmail.com",
+            "your_email_address",
             [email],
             fail_silently=False,
         )
@@ -47,7 +47,7 @@ def petSittingConfirm(request):
         send_mail(
             "Confirmation Mail For Pet Sitting",
             "Thank you for your application for petsitting. We have stored your details, so you could bring your pets to the designated addresses of the petsitter and for further details you can communicate with them thereafter.",
-            "yeona.kim1230@gmail.com",
+            "your_email_address",
             [email],
             fail_silently=False,
         )
