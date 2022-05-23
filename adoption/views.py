@@ -21,7 +21,7 @@ def adoptionform(request):
         send_mail(
             "Adoption Confirmation Mail",
             "Thank you for your application for adoption. Our team will reach you soon, so please stay in touch.",
-            "yeona.kim1230@gmail.com",
+            "your_email_address",
             [emailid],
             fail_silently=False,
         )
@@ -40,7 +40,7 @@ def adoptconfirm(request):
         send_mail(
             "Adoption Confirmation Mail",
             "Thank you for your application for adoption. Our team will reach you soon, so please stay in touch.",
-            "yeona.kim1230@gmail.com",
+            "your_email_address",
             [emailid],
             fail_silently=False,
         )
