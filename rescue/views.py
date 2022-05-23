@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect
+lfrom django.shortcuts import render, redirect
 from django.http import HttpResponse
 from rescue.models import Seats, Dogs
 from django.core.mail import send_mail
@@ -15,7 +15,7 @@ def NotifyConfirm(request):
         send_mail(
             "Rescue Confirmation Mail",
             "We have received your appeal for rescue. But there is no available seat at the current moment, so we will mail and messaged you in case of seat availabilty.",
-            "yeona.kim1230@gmail.com",
+            "your_email_address",
             [email],
             fail_silently=False,
         )
@@ -40,7 +40,7 @@ def RescueConfirm(request):
         send_mail(
             "Rescue Confirmation Mail",
             "We have received your appeal for rescue. Our team will call you soon regarding the next details, so please stay in touch.",
-            "yeona.kim1230@gmail.com",
+            "email_address",
             [email],
             fail_silently=False,
         )
